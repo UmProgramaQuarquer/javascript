@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando idade</title>
+</head>
+<body>
+    <h1>Idade</h1>
+    <p>Quantos anos você tem?</p> <input type="number" name="idade" id="idade"> <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"> Coloque primeiro sua idade.</div>
+    <script>
+    function verificar() {
+        var idade = document.querySelector("input#idade")
+        var idade_n = Number(idade.value)
+        var res = document.querySelector("div#res")
+    if (idade_n >= 18) {
+        var check = "maior de idade"
+    } else {
+        var check = "menor de idade"
+    }
+    res.innerHTML = `Você é <strong>${check}</strong>.`
+}
+    </script>
+</body>
+</html>

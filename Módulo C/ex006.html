@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#botao{
+            background-color: tomato;
+            font: normal 15pt calibri;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="botão">
+        Interaja...
+    </div>
+
+    <script>
+        var area = window.document.getElementById('botão')
+        addEventListener('click', clicar)
+        addEventListener('mouseover', entrar)
+        addEventListener('mouseout', sair)
+        addEventListener('keydown', apertar)
+        addEventListener('keyup', soltar)
+        
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+            area.style.width = 'auto'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+            area.style.width = 'auto'
+        }
+        function sair() {
+            area.innerText = 'Saiu...'       
+            area.style.width = 'auto'
+        }
+        function apertar() {
+            area.innerText = 'Não é pra apertar nenhum botão ainda'
+            area.style.width = 'auto'
+        }
+        function soltar() {
+            area.innerText = 'Isso aí'
+            area.style.width = 'auto'
+        }
+    </script>
+</body>
+</html>

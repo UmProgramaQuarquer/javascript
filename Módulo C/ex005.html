@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            font: normal 13pt calibri;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titl">Vazio</h1>
+    <p>Com certeza é algo praticamente insignificante, tão insignificante que não paramos para pensar nele. </p>
+    <p>Mas ainda assim, é algo que me interessa, já que provavelmente alguem falaria: o espaço não é considerado o vazio?</p>
+    <p>Pare para pensar um pouco, no vazio, nada é suposto a existir, e no espaço existem várias coisas.</p>
+    <div id="frs">No nada, nada existe.</div>
+    <script>
+        var frs = window.document.getElementById('frs')
+        var ttl = window.document.querySelector('h1.titl') //qnd é class deve-se usar . e qnd for id deve-se usar #
+        var prg = window.document.getElementsByTagName('p')[2]
+        frs.style.background = 'grey'
+        ttl.style.color = 'red'
+        prg.style.color = 'grey'
+    </script>
+    </body>
+</html>

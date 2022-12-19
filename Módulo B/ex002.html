@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            font: normal 15pt Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trolado</h1>
+    <p>Essa página também é só pra encher o saco kkkk</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        alert('Vai se fuder ' + nome) // + = concatenação
+        var n1 = Number.parseInt(prompt('Agr fala um número ai'))
+        var n2 = Number.parseFloat(prompt('Agr fala outro'))
+        var n3 = Number(prompt('Fala outro ai so de zuera'))
+        /*Number.parseInt(n) troca o valor string para um valor number inteiro (o prompt transforma o valor automaticamente em string).
+        Já o Number.parseFloat(n) troca o valor string para um valor number mesmo com ponto flutuante (5.5).
+        Existe também apenas o Number(n), que é uma forma simplificada dos dois.*/
+        //Ao contrário desses, para substituir para um valor string, existe o String(n) e o n.toString()
+        var s = n1 + n2 + n3
+        document.writeln(`Seu nome tem ${nome.length} letras.<br/>`)
+        document.writeln(`Eu tenho ${s} de qi.`)
+    </script>
+</body>
+</html>

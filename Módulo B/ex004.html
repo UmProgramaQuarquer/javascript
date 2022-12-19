@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:)</title>
+    <style>
+        body{ 
+            background-color: gold;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var idade = window.prompt(`Qnts anos você tem, ${nome}?`)
+        var idade_confirm = idade >= 18 ? `maior de idade, com ${idade} anos.` : `menor de idade, com ${idade} anos.`
+        document.write(`Olá, ${nome}! Vejo que é ${idade_confirm} <br/>`)
+        document.write('Bom, só queria lhe falar uma coisa: <br/> Vai se fuder!')
+    </script>
+</body>
+</html>

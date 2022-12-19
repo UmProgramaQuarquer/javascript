@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(75, 194, 253);
+    font: normal 13pt calibri;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px; /*define a curvatura da ponta das bordas*/
+    padding: 15px; /* distancia o conteúdo das bordas*/
+    width: 500px; /*limita o tamanho do quadro*/
+    margin: auto; /*centraliza o quadro*/
+}
+
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+img {
+    border-radius: 100%;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
